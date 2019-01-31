@@ -1,0 +1,15 @@
+{
+  "name": "puller",
+  "version": "1.0.0",
+  "description": "puller",
+  "main": "puller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^16.13.3",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
