@@ -36,3 +36,11 @@ Try it!
 ```zsh
 $ sls invoke -f puller -l
 ```
+
+## Development
+
+### Testing
+
+```bash
+npm run test
+```
