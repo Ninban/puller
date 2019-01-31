@@ -1,4 +1,7 @@
 # puller
+
+[![Build Status](https://travis-ci.com/Ninban/puller.svg?branch=master)](https://travis-ci.com/Ninban/puller)
+
 `puller` will automatically try to create a pull request from upstream to your fork, so you can review and merge it.
 
 #### Why
