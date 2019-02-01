@@ -1,5 +1,5 @@
 const chai = require('chai');
-const should = require('chai').should();
+const should = chai.should();
 const handleError = require('../puller').handleError;
 
 describe('handleError', function () {
