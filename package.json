@@ -13,6 +13,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
+    "@octokit/fixtures": "^14.0.1",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"

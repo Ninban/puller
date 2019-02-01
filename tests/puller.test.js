@@ -15,7 +15,7 @@ describe('handleError', function () {
         };
         const expectedResponse = {
             status: 'Success',
-            message: 'No commits found'
+            message: 'No new commits found'
         };
         const response = handleError(error);
         return response.status.should.equal(expectedResponse.status) && response.message.should.equal(expectedResponse.message);

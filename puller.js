@@ -25,7 +25,7 @@ exports.handleError = error => {
         if (message.includes('No commits between'))
             return {
                 status: 'Success',
-                message: 'No commits found'
+                message: 'No new commits found'
             };
         else if (message.includes('A pull request already exists'))
             return {
@@ -41,6 +41,8 @@ exports.handleError = error => {
 exports.puller = async () => {
     const openMergeRequest = exports.openMergeRequest;
     const handleError = exports.handleError;
+
+    console.log(`Trying to open a pull request on repository ${process.env.repoName} from ${process.env.headRepoOwner}:${process.env.headRepoBranch} to ${process.env.baseRepoOwner}:${process.env.baseRepoBranch}`);
 
     return openMergeRequest()
         .then(() => {
