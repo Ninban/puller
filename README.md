@@ -1,7 +1,7 @@
 # puller
 
 [![Build Status](https://travis-ci.com/Ninban/puller.svg?branch=master)](https://travis-ci.com/Ninban/puller) 
-[![Coverage Status](https://coveralls.io/repos/github/Ninban/puller/badge.svg?branch=coverage)](https://coveralls.io/github/Ninban/puller?branch=coverage)
+[![Coverage Status](https://coveralls.io/repos/github/Ninban/puller/badge.svg?branch=coverage)](https://coveralls.io/github/Ninban/puller?branch=coverage) [![Greenkeeper badge](https://badges.greenkeeper.io/Ninban/puller.svg)](https://greenkeeper.io/)
 
 `puller` will automatically try to create a pull request from upstream to your fork, so you can review and merge it.
 
