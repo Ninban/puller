@@ -2,8 +2,8 @@ const chai = require('chai');
 const should = chai.should();
 const handleError = require('../puller').handleError;
 
-describe('handleError', function () {
-    it('should return status Success and message No commits found', function () {
+describe('handleError', () => {
+    it('should return status Success and message No commits found', () => {
         const error = {
             name: 'HttpError',
             status: 422,
@@ -20,7 +20,8 @@ describe('handleError', function () {
         const response = handleError(error);
         return response.status.should.equal(expectedResponse.status) && response.message.should.equal(expectedResponse.message);
     });
-    it('should return status Success and message A pull request already exists', function () {
+
+    it('should return status Success and message A pull request already exists', () => {
         const error = {
             name: 'HttpError',
             status: 422,
@@ -37,7 +38,8 @@ describe('handleError', function () {
         const response = handleError(error);
         return response.status.should.equal(expectedResponse.status) && response.message.should.equal(expectedResponse.message);
     });
-    it('should return error object for any other HttpError', function () {
+
+    it('should return error object for any other HttpError of status 422', () => {
         const error = {
             name: 'HttpError',
             status: 422,
@@ -49,20 +51,30 @@ describe('handleError', function () {
         };
         const expectedResponse = error;
         const response = handleError(error);
-        return response.name.should.equal(expectedResponse.name) && response.status.should.equal(expectedResponse.status) && response.errors.should.equal(expectedResponse.errors);
+        return response.should.equal(expectedResponse);
     });
-    it('should return error object for any other error', function () {
+
+    it('should return error object for any other HttpError of a non-verified status', () => {
         const error = {
-            name: 'NotAnHttpError',
-            status: 422,
+            name: 'HttpError',
+            status: 401,
             errors: [
                 {
-                    message: 'yo whatever'
+                    message: 'Unauthorized'
                 }
             ]
         };
         const expectedResponse = error;
         const response = handleError(error);
-        return response.name.should.equal(expectedResponse.name) && response.status.should.equal(expectedResponse.status) && response.errors.should.equal(expectedResponse.errors);
+        return response.should.equal(expectedResponse);
+    });
+
+    it('should return error object for any other error', () => {
+        const error = {
+            unknownFieldName: 'NotAnHttpError'
+        };
+        const expectedResponse = error;
+        const response = handleError(error);
+        return response.should.equal(expectedResponse);
     });
 });
