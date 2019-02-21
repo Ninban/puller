@@ -13,8 +13,8 @@ What a bad idea! Now I'm locking myself to a potentially out-of-date version of 
 ## Configuration
 This project was made with the [serverless framework](https://serverless.com/), which makes it easy to deploy.
 
-You will need to fill out the `environment` variables in the `serverless.yml` file.  
-Below is an example setup:
+You will need to fill out the environment variables in the `serverless.yml` file.  
+While I suggest you use a storage service for your variables like I have done with [AWS's Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-cli.html) (`ssm`), here is an example setup:
 ```yaml
 environment:
   GITHUB_TOKEN: 'MY_SECRET_GITHUB_TOKEN'
