@@ -26,7 +26,7 @@ environment:
 ```
 To create a Github token, follow the [documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/).
 
-You may also want to modify the schedule to you own liking. I have made it every hour by default.
+You may also want to modify the schedule to your own liking. I have made it every hour by default.
 ```yaml
 events:
   - schedule: rate(1 hour)
