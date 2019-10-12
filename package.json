@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@octokit/rest": "^16.27.3",
+    "@octokit/rest": "^16.33.1",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
