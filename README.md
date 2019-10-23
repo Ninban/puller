@@ -1,6 +1,7 @@
 # puller
 
-[![Build Status](https://travis-ci.com/Ninban/puller.svg?branch=master)](https://travis-ci.com/Ninban/puller) 
+[![Build Status](https://travis-ci.com/Ninban/puller.svg?branch=master)](https://travis-ci.com/Ninban/puller) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNinban%2Fpuller.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FNinban%2Fpuller?ref=badge_shield)
+
 [![Coverage Status](https://coveralls.io/repos/github/Ninban/puller/badge.svg?branch=coverage)](https://coveralls.io/github/Ninban/puller?branch=coverage) [![Greenkeeper badge](https://badges.greenkeeper.io/Ninban/puller.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io//test/github/Ninban/puller/badge.svg?targetFile=package.json)](https://snyk.io//test/github/Ninban/puller?targetFile=package.json)
 
@@ -49,3 +50,7 @@ sls invoke -f puller -l
 ```bash
 npm run test
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FNinban%2Fpuller.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FNinban%2Fpuller?ref=badge_large)
