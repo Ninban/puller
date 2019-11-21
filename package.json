@@ -15,7 +15,7 @@
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
-    "@octokit/fixtures": "^15.0.2",
+    "@octokit/fixtures": "^17.0.0",
     "chai": "^4.2.0",
     "coveralls": "^3.0.7",
     "mocha": "^6.2.2",
