@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@octokit/rest": "^17.0.0",
+    "@octokit/rest": "^17.8.0",
     "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
